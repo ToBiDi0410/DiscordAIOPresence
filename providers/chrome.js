@@ -81,6 +81,7 @@ provider.refresh = refresh;
 
 urlProcessors.youtube = require("./chrome_youtube");
 urlProcessors.twitch = require("./chrome_twitch");
+urlProcessors.iloveradio = require("./chrome_iloveradio");
 
 urlProcessors.XEnd = function(page) { return null; }
 
