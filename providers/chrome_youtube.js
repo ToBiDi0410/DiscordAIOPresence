@@ -17,7 +17,7 @@ async function handle(page) {
     if (page.url().includes("youtube.com") || page.url().includes("youtu.be")) {
         try {
             var title = await page.evaluate(() => (document.querySelector('h1.title.style-scope.ytd-video-primary-info-renderer') ? document.querySelector('h1.title.style-scope.ytd-video-primary-info-renderer').textContent : null));
-            var running = await page.evaluate(() => { return document.querySelector(".ytp-play-button.ytp-button").title.toLocaleLowerCase().includes("pause") });
+            var running = await page.evaluate(() => { return document.querySelector(".ytp-play-button.ytp-button") ? document.querySelector(".ytp-play-button.ytp-button").title.toLocaleLowerCase().includes("pause") : false });
             if (title != "" && title != null) {
                 //console.log("[PROVIDER] [CHROME] [YOUTUBE] Found Video: " + title);
 
