@@ -2,6 +2,8 @@
 
 A Project with the Aim to provide one Application for all possible Discord Presences.
 
+#### This project is not beeing developed actively! Opening Issues or requesting features is not as weigthed as in other projects!
+
 ### Currently Supported:
 - Chrome (Remote Debugging Port 9222)
   - Youtube
