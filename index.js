@@ -4,6 +4,7 @@ const client = new RPC.Client({ transport: 'ipc' });
 var providers = [];
 providers.push(require("./providers/chrome"));
 providers.push(require("./providers/minecraft"));
+providers.push(require("./providers/seaofthieves"));
 
 const demo = false;
 
