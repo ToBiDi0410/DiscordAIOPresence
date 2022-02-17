@@ -5,6 +5,7 @@ var providers = [];
 providers.push(require("./providers/chrome"));
 providers.push(require("./providers/minecraft"));
 providers.push(require("./providers/seaofthieves"));
+providers.push(require("./providers/beamng"));
 
 const demo = false;
 
